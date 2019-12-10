@@ -1,18 +1,12 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-# compiled output
-/dist
-/tmp
+# 忽略 config 目錄下的 database.yml 檔案
+config/database.yml
 
-# dependencies
-/node_modules
-/bower_components
+# 忽略所有 db 目錄下附檔名是 .sqlite3 的檔案
+/db/*.sqlite3
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage/*
-/libpeerconnection.log
-npm-debug.log
-testem.log
+
+# 當然你要忽略自己也可以，只是通常不會這麼做
+# .gitignore
+#忽略ENV
 *.env
